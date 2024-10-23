@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from 'react'
-import { BiSearch } from 'react-icons/bi'
 import { BsTags } from 'react-icons/bs'
 import { MdChevronRight } from 'react-icons/md'
 import { FiImage } from 'react-icons/fi'
