@@ -7,21 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-          // white: '#FFFFFF',
-          // bg: '#1A120B',
-          // bgLight: '#2C1E12',
-          // bgVariant: '#3C2A21',
-          // primary: '#D5CEA3',
-          // primaryLight: '#E5E5CB',
-          // primaryDark: '#C2B280',
-
           white: '#FFFFFF',
-          bg: '#F0F8FF',
-          bgLight: '#F8FBFF',
-          bgVariant: '#E6F3FF',
-          primary: '#1E3A8A',
-          primaryLight: '#3B82F6',
-          primaryDark: '#1E40AF',
+          bg: '#C5C1C0',  // grey
+          bgVariant: '#F7CE3E',  //yellow
+          primary: '#0A1612',
+          primaryVariant: '#1A2930', 
+
+          // white: '',
+          // bg: '#FFFFFF',
+          // dark: '#403F45',
+          // primary: '#FDEC00',
+          // primaryLight: '#F4DD08',
+          // primaryDark: '#E6CE1D',
       },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],

@@ -31,28 +31,28 @@ const Header = () => {
   ];
 
   return (
-    <header className="shadow-md h-[10vh] bg-bgVariant relative z-50">
-      <div className="container flex items-center justify-between py-1 mx-2">
-        <div className="flex items-center">
+    <header className="shadow-md bg-bgVariant relative z-50 h-[8vh] flex items-center">
+      <div className="container flex items-center justify-between h-full px-4 mx-auto">
+        <div className="flex items-center h-full py-1">
           <LazyLoad>
-            <img src={logo} alt="Logo" className="h-12" />
+            <img src={logo} alt="Logo" className="h-full max-h-[7vh] w-auto object-contain" />
           </LazyLoad>
         </div>
-        <nav className="hidden space-x-6 md:flex">
+        <nav className="items-center hidden h-full md:flex">
           {menuItems.map((item) => (
-            <div key={item.name} className="relative group">
+            <div key={item.name} className="relative flex items-center h-full mx-2 group">
               {item.submenu ? (
                 <>
-                  <a href="#" className="flex items-center text-primary hover:text-primaryLight">
+                  <a href="#" className="flex items-center h-full px-2 text-sm transition duration-300 text-primary hover:text-primaryVariant">
                     {item.name}
-                    <FaChevronDown className="w-4 h-4 ml-1" />
+                    <FaChevronDown className="w-2 h-2 ml-1" />
                   </a>
-                  <div className="absolute left-0 hidden w-48 py-2 mt-2 shadow-md group-hover:block bg-bgLight">
+                  <div className="absolute left-0 hidden w-56 py-2 top-[8vh] shadow-xl group-hover:block bg-white rounded-b-md">
                     {item.submenu.map((subItem) => (
                       <Link 
                         key={subItem.name} 
                         to={subItem.link} 
-                        className="block px-4 py-2 text-sm text-primary hover:bg-bg hover:text-primaryLight"
+                        className="block px-4 py-2 text-xs transition duration-300 text-primary hover:bg-bg hover:text-primaryVariant"
                       >
                         {subItem.name}
                       </Link>
@@ -60,7 +60,7 @@ const Header = () => {
                   </div>
                 </>
               ) : (
-                <Link to={item.link} className="text-primary hover:text-primaryLight">
+                <Link to={item.link} className="flex items-center h-full px-2 text-sm transition duration-300 text-primary hover:text-primaryVariant">
                   {item.name}
                 </Link>
               )}
@@ -68,25 +68,25 @@ const Header = () => {
           ))}
         </nav>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes className="w-6 h-6 text-primary" /> : <FaBars className="w-6 h-6 text-primary" />}
+          <button onClick={() => setIsOpen(!isOpen)} className="transition duration-300 text-primary hover:text-primaryVariant">
+            {isOpen ? <FaTimes className="w-5 h-5" /> : <FaBars className="w-5 h-5" />}
           </button>
         </div>
       </div>
       {isOpen && (
-        <div className="absolute left-0 right-0 z-50 md:hidden bg-bgVariant">
-          <nav className="px-4 pt-2 pb-4 space-y-2">
+        <div className="absolute left-0 right-0 top-[8vh] z-50 md:hidden bg-white shadow-md">
+          <nav className="px-4 py-2 space-y-1">
             {menuItems.map((item) => (
               <div key={item.name}>
                 {item.submenu ? (
                   <>
-                    <a href="#" className="block py-2 text-primary hover:text-primaryLight">{item.name}</a>
+                    <a href="#" className="block py-2 text-sm transition duration-300 text-primary hover:text-primaryVariant">{item.name}</a>
                     <div className="pl-4">
                       {item.submenu.map((subItem) => (
                         <Link 
                           key={subItem.name} 
                           to={subItem.link} 
-                          className="block py-1 text-sm text-primary hover:text-primaryLight"
+                          className="block py-2 text-xs transition duration-300 text-primary hover:text-primaryVariant"
                         >
                           {subItem.name}
                         </Link>
@@ -94,7 +94,7 @@ const Header = () => {
                     </div>
                   </>
                 ) : (
-                  <Link to={item.link} className="block py-2 text-primary hover:text-primaryLight">
+                  <Link to={item.link} className="block py-2 text-sm transition duration-300 text-primary hover:text-primaryVariant">
                     {item.name}
                   </Link>
                 )}

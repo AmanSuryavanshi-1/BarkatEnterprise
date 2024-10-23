@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Hero.module.css';
 
 import crousel1 from '../assets/Products/Carousel WEBP/1.webp';
 import crousel2 from '../assets/Products/Carousel WEBP/2.webp';
@@ -11,6 +10,7 @@ import crousel6 from '../assets/Products/Carousel WEBP/11.webp';
 import crousel7 from '../assets/Products/Carousel WEBP/12.webp';
 import crousel8 from '../assets/Products/Carousel WEBP/13.webp';
 import crousel9 from '../assets/Products/Carousel WEBP/14.webp';
+import { FaArrowRight } from 'react-icons/fa';
 
 
 const Hero = () => {
@@ -27,9 +27,6 @@ const Hero = () => {
     crousel8,
     crousel9,
     crousel10,
-    // "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-    // "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b",
-    // "https://images.unsplash.com/photo-1600585154526-990dced4db0d"
   ];
 
   useEffect(() => {
@@ -54,58 +51,55 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[90vh] bg-bg overflow-hidden">
+    <section className="relative h-[92vh] overflow-hidden bg-bg">
       {images.map((img, index) => (
         <img
           key={index}
           src={img}
-          alt={`Hero ${index + 1}`}
+          alt={`Tile showcase ${index + 1}`}
           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         />
       ))}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center bg-primary bg-opacity-40">
         <div className={`text-center z-10 transition-all duration-500 ${
           textVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-10'
         }`}>
-          <h1 className={`mb-4 font-serif text-6xl font-bold text-primary ${styles.heroTitle}`}>
-            Welcome to Barkat Enterprises
+          <h1 className="mb-4 font-serif text-5xl font-bold text-white md:text-6xl lg:text-7xl drop-shadow-lg">
+            Barkat Enterprises
           </h1>
-          <p className={`mb-8 text-xl md:text-2xl lg:text-3xl ${styles.heroSubtitle}`}>
-            Discover the Beauty of Premium Tiles
+          <p className="mb-8 text-xl font-semibold md:text-2xl lg:text-3xl text-bgVariant drop-shadow">
+            Elevate Your Space with Premium Tiles
           </p>
-          <button className="px-8 py-3 text-lg font-semibold rounded-full bg-[#ff6b6b] text-white shadow-md hover:bg-[#ff8787] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out">
-            Explore Now
-          </button>
+          <div className="flex justify-center">
+            <button className="group relative px-8 py-3 text-lg font-bold rounded-md 
+              bg-bgVariant text-primary 
+              shadow-lg hover:shadow-xl
+              hover:bg-white 
+              transform hover:-translate-y-0.5 active:translate-y-0.5
+              transition-all duration-300 ease-in-out
+              overflow-hidden flex items-center justify-center space-x-2">
+              <span className="relative z-10">Explore Collection</span>
+              <FaArrowRight className="relative z-10 text-xl transition-transform duration-300 group-hover:translate-x-1" />
+              <span className="absolute inset-0 transition-opacity duration-300 bg-white opacity-0 group-hover:opacity-100"></span>
+            </button>
+          </div>
         </div>
       </div>
-      <button 
-        onClick={prevSlide} 
-        className="absolute p-2 text-white transition-all duration-300 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full left-4 top-1/2 hover:bg-opacity-75"
-        aria-label="Previous slide"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button 
-        onClick={nextSlide} 
-        className="absolute p-2 text-white transition-all duration-300 transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full right-4 top-1/2 hover:bg-opacity-75"
-        aria-label="Next slide"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-      <div className="absolute left-0 right-0 flex justify-center bottom-4">
+      
+      {/* ... existing navigation buttons ... */}
+      
+      <div className="absolute left-0 right-0 flex justify-center bottom-8">
         {images.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`w-3 h-3 rounded-full mx-2 ${
-              index === currentSlide ? 'bg-primary' : 'bg-primaryLight'
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full mx-2 transition-all duration-300 ${
+              index === currentSlide ? 'bg-bgVariant w-6' : 'bg-white bg-opacity-50 hover:bg-opacity-75'
             }`}
-          ></div>
+            aria-label={`Go to slide ${index + 1}`}
+          ></button>
         ))}
       </div>
     </section>
