@@ -10,12 +10,12 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', link: '/' },
     { 
-      name: 'Products', 
-      submenu: [
-        { name: '', link: '/products/floor-tiles' },
-        { name: 'Wall Tiles', link: '/products/wall-tiles' },
-        { name: 'Bathroom Tiles', link: '/products/bathroom-tiles' },
-      ]
+      name: 'Products', link: '/products',
+      // submenu: [
+      //   { name: '', link: '/products/floor-tiles' },
+      //   { name: 'Wall Tiles', link: '/products/wall-tiles' },
+      //   { name: 'Bathroom Tiles', link: '/products/bathroom-tiles' },
+      // ]
     },
     { 
       name: 'Catalogues', 

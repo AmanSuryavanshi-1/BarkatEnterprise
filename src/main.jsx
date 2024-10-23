@@ -8,9 +8,10 @@ import Hero from './Components/Hero';
 import ProductCategories from './Components/ProductCategories';
 import About from './Components/About';
 import Footer from './Components/Footer';
+import ProductPage from './Pages/ProductPage';
 
 // New components for product and catalogue pages
-const ProductPage = ({ category }) => <div>Product Page for {category}</div>;
+// const ProductPage = ({ category }) => <div>Product Page for {category}</div>;
 const CataloguePage = ({ year }) => <div>E-Catalogue for {year}</div>;
 
 const Layout = () => (
@@ -35,9 +36,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "products/floor-tiles", element: <ProductPage category="Floor Tiles" /> },
-      { path: "products/wall-tiles", element: <ProductPage category="Wall Tiles" /> },
-      { path: "products/bathroom-tiles", element: <ProductPage category="Bathroom Tiles" /> },
+      // { path: "products/floor-tiles", element: <ProductPage category="Floor Tiles" /> },
+      // { path: "products/wall-tiles", element: <ProductPage category="Wall Tiles" /> },
+      // { path: "products/bathroom-tiles", element: <ProductPage category="Bathroom Tiles" /> },
+      { path: "products", element: <ProductPage /> },
       { path: "catalogues/2023", element: <CataloguePage year="2023" /> },
       { path: "catalogues/2022", element: <CataloguePage year="2022" /> },
       { path: "catalogues/2021", element: <CataloguePage year="2021" /> },
