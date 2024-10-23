@@ -16,7 +16,7 @@ export const categories = [
 export const sampleTiles = [
   // All types 
   { id: 1, name: '106 D', image: '../assets/Products/Lemon 1X1.5/All Types/106 D.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
-  { id: 2, name: '106 HL1', image: '/src/assets/Products/Lemon 1X1.5/All Types/106 HL1.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
+  { id: 2, name: '106 HL1', image: '../assets/Products/Lemon 1X1.5/All Types/106 HL1.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 3, name: '106 L', image: '/src/assets/Products/Lemon 1X1.5/All Types/106 L.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 4, name: '106 SET', image: '/src/assets/Products/Lemon 1X1.5/All Types/106 SET.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 5, name: '213 D', image: '/src/assets/Products/Lemon 1X1.5/All Types/213 D.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
@@ -97,8 +97,8 @@ export const sampleTiles = [
   { id: 72, name: '3072 SET', image: '/src/assets/Products/Lemon 1X1.5/Flower Design - Series/3072 SET.png', category: 'Lemon 1X1.5', subcategory: 'Flower Design - Series' },
 
   // Kitchen tiles
-  { id: 73, name: '9017 D', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9017 D.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
-  { id: 74, name: '9017 HL1', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9017 HL1.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
+  { id: 73, name: '9017 D', image: '../assets/Products/Lemon 1X1.5/Kitchen/9017 D.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
+  { id: 74, name: '9017 HL1', image: '../assets/Products/Lemon 1X1.5/Kitchen/9017 HL1.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
   { id: 75, name: '9017 HL2', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9017 HL2.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
   { id: 76, name: '9017 L', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9017 L.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
   { id: 77, name: '9017 SAMPLE', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9017 SAMPLE.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
@@ -137,7 +137,7 @@ export const sampleTiles = [
   { id: 110, name: '9099 SET', image: '/src/assets/Products/Lemon 1X1.5/Kitchen/9099 SET.png', category: 'Lemon 1X1.5', subcategory: 'Kitchen' },
   
   // Living Room - Hallway tiles
-  { id: 111, name: '1018 D', image: '/src/assets/Products/Lemon 1X1.5/Living Room - Hall/1018 D.png', category: 'Lemon 1X1.5', subcategory: 'Living Room - Hall' },
+  { id: 111, name: '1018 D', image: '../assets/Products/Lemon 1X1.5/Living Room - Hall/1018 D.png', category: 'Lemon 1X1.5', subcategory: 'Living Room - Hall' },
   { id: 112, name: '1018 HL1', image: '/src/assets/Products/Lemon 1X1.5/Living Room - Hall/1018 HL1.png', category: 'Lemon 1X1.5', subcategory: 'Living Room - Hall' },
   { id: 113, name: '1018 L', image: '/src/assets/Products/Lemon 1X1.5/Living Room - Hall/1018 L.png', category: 'Lemon 1X1.5', subcategory: 'Living Room - Hall' },
   { id: 114, name: '1018 SET', image: '/src/assets/Products/Lemon 1X1.5/Living Room - Hall/1018 SET.png', category: 'Lemon 1X1.5', subcategory: 'Living Room - Hall' },
