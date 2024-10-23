@@ -1,7 +1,7 @@
 export const categories = [
   {
     name: 'Lemon 1 X 1.5',
-    subcategories: ['All Types', 'Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja']
+    subcategories: ['Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja']
   },
   {
     name: 'Lenora 2 X 2',
