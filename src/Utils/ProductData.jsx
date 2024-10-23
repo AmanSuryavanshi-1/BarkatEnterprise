@@ -1,11 +1,11 @@
 export const categories = [
   {
     name: 'Lemon 1 X 1.5',
-    subcategories: ['Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja']
+    subcategories: [ 'Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja']
   },
   {
     name: 'Lenora 2 X 2',
-    subcategories: ['Floor Tiles - Hall - Living Room']
+    subcategories: ['Bathroom Tiles','Floor Tiles - Hall - Living Room']
   },
   {
     name: 'Lenora 2 X 4',
@@ -197,10 +197,6 @@ export const sampleTiles = [
     { id: 164, name: 'Carara Onix 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Carara Onix 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 165, name: 'Carara White 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Carara White 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 166, name: 'Carara White 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Carara White 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
-    { id: 167, name: 'Galicha-08 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
-    { id: 168, name: 'Galicha-08 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
-    { id: 169, name: 'Galicha-14 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-14 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
-    { id: 170, name: 'Galicha-14 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-14 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 171, name: 'Magic-122 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Magic-122 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 172, name: 'Magic-122 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Magic-122 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 173, name: 'Magic-128 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Magic-128 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
@@ -213,8 +209,12 @@ export const sampleTiles = [
     { id: 180, name: 'Rivoli Bianco 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Rivoli Bianco 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 181, name: 'Rivoli Bianco 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Rivoli Bianco 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
 
+    //Bathroom
+    { id: 167, name: 'Galicha-08 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 1.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
+    { id: 168, name: 'Galicha-08 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
+    { id: 169, name: 'Galicha-14 1', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-14 1.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
+    { id: 170, name: 'Galicha-14 4 Set', image: '/src/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-14 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
     // Lenora 2X4 Floor
-      // Lenora 2 X 4 Floor
   { id: 182, name: 'American Satwario 1', image: '/src/assets/Products/Lenora 2X4/Floor/American Satwario 1.png', category: 'Lenora 2 X 4', subcategory: 'Floor' },
   { id: 183, name: 'American Satwario 2', image: '/src/assets/Products/Lenora 2X4/Floor/American Satwario 2.png', category: 'Lenora 2 X 4', subcategory: 'Floor' },
   { id: 184, name: 'Armani Brown 1', image: '/src/assets/Products/Lenora 2X4/Floor/Armani Brown 1.png', category: 'Lenora 2 X 4', subcategory: 'Floor' },
