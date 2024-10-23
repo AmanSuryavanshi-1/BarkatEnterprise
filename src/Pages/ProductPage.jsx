@@ -111,6 +111,7 @@ export default function ProductPage() {
                           src={tile.image} 
                           alt={tile.name} 
                           className="object-cover w-full h-full"
+                          onError={(e) => { e.target.onerror = null; e.target.src = '/src/assets/Logo/13.png'; }} // Fallback image
                         />
                       ) : (
                         <div className="flex items-center justify-center w-full h-full bg-gray-100">
