@@ -1,3 +1,4 @@
+import lemon from '../assets/Products/Lemon 1X1.5/All Types/106 D.png'
 export const categories = [
   {
     name: 'Lemon 1 X 1.5',
@@ -15,7 +16,7 @@ export const categories = [
 
 export const sampleTiles = [
   // All types 
-  { id: 1, name: '106 D', image: '../assets/Products/Lemon 1X1.5/All Types/106 D.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
+  { id: 1, name: '106 D', image: 'lemon', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 2, name: '106 HL1', image: '../assets/Products/Lemon 1X1.5/All Types/106 HL1.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 3, name: '106 L', image: '/src/assets/Products/Lemon 1X1.5/All Types/106 L.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 4, name: '106 SET', image: '/src/assets/Products/Lemon 1X1.5/All Types/106 SET.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
