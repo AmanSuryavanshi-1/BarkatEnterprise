@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 import LazyLoad from 'react-lazyload';
-import logo from '../assets/Logo/13-Photoroom.png';
+import logo from '/assets/Logo/13-Photoroom.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

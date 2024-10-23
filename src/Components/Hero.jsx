@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-import crousel1 from '../assets/Products/Carousel WEBP/1.webp';
-import crousel2 from '../assets/Products/Carousel WEBP/2.webp';
-import crousel3 from '../assets/Products/Carousel WEBP/3.webp';
-import crousel10 from '../assets/Products/Carousel WEBP/4.webp';
-import crousel4 from '../assets/Products/Carousel WEBP/9.webp';
-import crousel5 from '../assets/Products/Carousel WEBP/10.webp';
-import crousel6 from '../assets/Products/Carousel WEBP/11.webp';
-import crousel7 from '../assets/Products/Carousel WEBP/12.webp';
-import crousel8 from '../assets/Products/Carousel WEBP/13.webp';
-import crousel9 from '../assets/Products/Carousel WEBP/14.webp';
+import crousel1 from '/assets/Products/Carousel WEBP/1.webp';
+import crousel2 from '/assets/Products/Carousel WEBP/2.webp';
+import crousel3 from '/assets/Products/Carousel WEBP/3.webp';
+import crousel10 from '/assets/Products/Carousel WEBP/4.webp';
+import crousel4 from '/assets/Products/Carousel WEBP/9.webp';
+import crousel5 from '/assets/Products/Carousel WEBP/10.webp';
+import crousel6 from '/assets/Products/Carousel WEBP/11.webp';
+import crousel7 from '/assets/Products/Carousel WEBP/12.webp';
+import crousel8 from '/assets/Products/Carousel WEBP/13.webp';
+import crousel9 from '/assets/Products/Carousel WEBP/14.webp';
 import { FaArrowRight } from 'react-icons/fa';
 
 
