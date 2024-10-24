@@ -15,7 +15,7 @@ export const categories = [
 
 export const sampleTiles = [
   // All types
-  { id: 1, name: '106 D', image: '/public/assets/Products/Lemon 1X1.5/All Types/106 D.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
+  { id: 1, name: '106 D', image: '/assets/Products/Lemon 1X1.5/All Types/106 D.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 2, name: '106 HL1', image: '/assets/Products/Lemon 1X1.5/All Types/106 HL1.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 3, name: '106 L', image: '/assets/Products/Lemon 1X1.5/All Types/106 L.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
   { id: 4, name: '106 SET', image: '/assets/Products/Lemon 1X1.5/All Types/106 SET.png', category: 'Lemon 1 X 1.5', subcategory: 'All Types' },
@@ -62,8 +62,8 @@ export const sampleTiles = [
   { id: 43, name: '4029 SET', image: '/assets/Products/Lemon 1X1.5/Bathroom/4029 SET.png', category: 'Lemon 1 X 1.5', subcategory: 'Bathroom' },
 
   // Black and White tiles
-  { id: 44, name: 'Black', image: '/assets/Products/Lemon 1X1.5/Black and White/Black.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
-  { id: 45, name: 'White', image: '/assets/Products/Lemon 1X1.5/Black and White/White.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
+  { id: 44, name: 'Black', image: '/public/assets/Products/Lemon 1X1.5/Black and White/BLACK.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
+  { id: 45, name: 'White', image: '/public/assets/Products/Lemon 1X1.5/Black and White/White.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
 
   // Elevation - Outdoor wall tiles
   { id: 46, name: '8004 EL', image: '/assets/Products/Lemon 1X1.5/Elevation - Outdoor wall/8004 EL.png', category: 'Lemon 1 X 1.5', subcategory: 'Elevation - Outdoor wall' },

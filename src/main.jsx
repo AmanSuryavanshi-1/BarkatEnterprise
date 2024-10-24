@@ -15,7 +15,7 @@ import ProductPage from './Pages/ProductPage';
 const CataloguePage = ({ year }) => <div>E-Catalogue for {year}</div>;
 
 const Layout = () => (
-  <div className="font-sans bg-bg text-primary">
+  <div className="font-sans bg-white text-primary mt-[8vh]">
     <Header />
     <Outlet />
     <Footer />
@@ -23,11 +23,11 @@ const Layout = () => (
 );
 
 const HomePage = () => (
-  <>
+  <div className='mt-[8vh]'>
     <Hero />
     <ProductCategories />
     <About />
-  </>
+  </div>
 );
 
 const router = createBrowserRouter([
