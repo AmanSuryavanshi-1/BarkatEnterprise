@@ -88,11 +88,11 @@ export default function ProductPage() {
           <div className="p-8">
             <div className="mx-auto max-w-7xl">
               {/* Header */}
-              <div className="p-3 mb-8 shadow-lg bg-bg rounded-3xl">
+              <div className="py-3 mb-8 shadow-lg bg-bg/20 rounded-xl">
                 <h1 className="font-serif text-4xl text-center text-primary">
                   <span className="font-bold">{selectedCategory}</span>
                   {selectedSubcategory !== 'All Types' && (
-                    <span className="text-primaryVariant"> - {selectedSubcategory}</span>
+                    <span className="font-medium text-primaryVariant"> - {selectedSubcategory}</span>
                   )}
                 </h1>
               </div>
