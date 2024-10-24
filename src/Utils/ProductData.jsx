@@ -1,20 +1,28 @@
 import black from "../../public/assets/Products/Lemon 1X1.5/Black&White/BLACK.png"
 import white from "../../public/assets/Products/Lemon 1X1.5/Black&White/WHITE.png"
 
+
+
 export const categories = [
   {
     name: 'Lemon 1 X 1.5',
-    subcategories: [ 'Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja']
+    subcategories: [ 'Bathroom', 'Black and White', 'Elevation - Outdoor wall', 'Flower Design - Series', 'Kitchen', 'Living Room - Hall', 'Pooja'],
   },
   {
     name: 'Lenora 2 X 2',
-    subcategories: ['Bathroom','Floor Tiles - Hall - Living Room']
+    subcategories: ['Bathroom Tiles','Floor Tiles - Hall - Living Room']
   },
   {
     name: 'Lenora 2 X 4',
     subcategories: ['Floor'] // Add subcategories as needed
   }
 ];
+// export const ProductCatSampleTiles = [
+//   { id: 1, name: '1361 D', image: '/assets/Products/Lemon 1X1.5/Bathroom/1361 D.png', category: 'Lemon 1 X 1.5', subcategory: 'Bathroom' },
+//   { id: 2, name: 'Black Tile', image: '/assets/Products/Lemon 1X1.5/Black&White/BLACK.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
+//   { id: 3, name: 'White Tile', image: '/assets/Products/Lemon 1X1.5/Black&White/WHITE.png', category: 'Lemon 1 X 1.5', subcategory: 'Black and White' },
+//   // Add more tiles as needed
+// ];
 
 export const sampleTiles = [
   // All types
@@ -212,7 +220,7 @@ export const sampleTiles = [
     { id: 180, name: 'Rivoli Bianco 1', image: '/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Rivoli Bianco 1.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
     { id: 181, name: 'Rivoli Bianco 4 Set', image: '/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Rivoli Bianco 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Floor Tiles - Hall - Living Room' },
 
-    //Bathroom
+    //Bathroom Tiles
     { id: 167, name: 'Galicha-08 1', image: '/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 1.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
     { id: 168, name: 'Galicha-08 4 Set', image: '/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-08 4 Set.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
     { id: 169, name: 'Galicha-14 1', image: '/assets/Products/Lenora 2X2/Floor Tiles - Hall - Living/Galicha-14 1.png', category: 'Lenora 2 X 2', subcategory: 'Bathroom Tiles' },
