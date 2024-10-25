@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
-            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">About Kajaria</h3>
-            <p className="text-primary">Kajaria Ceramics is India's leading tile manufacturer, offering a wide range of premium tiles for all your needs.</p>
+            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">About Barkat Enterprise</h3>
+            <p className="text-primary">Barkat Enterprise specializes in high-quality tiles and marbles, providing a wide range of options for all your flooring needs.</p>
           </div>
           <div>
             <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Quick Links</h3>
@@ -21,9 +21,9 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Contact Info</h3>
-            <p className="text-primary">J-1/B-1 (Extn.), Mohan Co-operative Industrial Estate, Mathura Road, New Delhi - 110044</p>
-            <p className="mt-2 text-primary">Phone: +91-11-26946409</p>
-            <p className="text-primary">Email: info@kajariaceramics.com</p>
+            <p className="text-primary">Kalindri Bus Stand, Dharampur, Malda</p>
+            <p className="mt-2 text-primary">Phone: 9630678115, 9899826755</p>
+            <p className="text-primary">Email: sk80bali@gmail.com</p>
           </div>
           <div>
             <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Follow Us</h3>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-8 mt-8 text-center border-t border-bgLight">
-          <p className="text-primary">&copy; {new Date().getFullYear()} Kajaria Ceramics Ltd. All rights reserved.</p>
+          <p className="text-primary">&copy; {new Date().getFullYear()} Barkat Enterprise. All rights reserved.</p>
         </div>
       </div>
     </footer>

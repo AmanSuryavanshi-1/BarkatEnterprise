@@ -9,6 +9,7 @@ import ProductCategories from './Components/ProductCategories';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import ProductPage from './Pages/ProductPage';
+import Contact from './Pages/Contact';
 
 // New components for product and catalogue pages
 // const ProductPage = ({ category }) => <div>Product Page for {category}</div>;
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       { path: "visualizer", element: <div>Visualizer Page</div> },
       { path: "where-to-buy", element: <div>Where to Buy Page</div> },
       { path: "about", element: <About /> },
-      { path: "contact", element: <div>Contact Us Page</div> },
+      { path: "contact", element: <Contact/>},
     ],
   },
 ]);
