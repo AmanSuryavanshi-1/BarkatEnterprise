@@ -1,29 +1,76 @@
 import React from 'react';
-import img from '../../public/assets/Barkat Enterprise Business Card PNG/1.png'
+import { Link } from 'react-router-dom';
+import { BsArrowRight } from 'react-icons/bs';
+import { IoBusinessOutline, IoTimeOutline, IoRibbonOutline } from 'react-icons/io5';
+
 const About = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container px-4 mx-auto">
-        <div className="flex flex-col items-center md:flex-row">
-          <div className="mb-8 md:w-1/2 md:mb-0">
-            <img src={img} alt="About Barkat Enterprise" className="rounded-lg shadow-md" />
+    <div className="flex items-center justify-center min-h-[92vh] px-4 py-6 font-sans bg-white sm:px-8">
+      <div className="w-full rounded-3xl max-w-[58rem] shadow-xl">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0">
+          {/* Image and Introduction Section */}
+          <div className="flex flex-col px-6 py-6 sm:px-12 bg-[#F7CE3E] text-[#0A1612] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
+            <h2 className="font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">About Us</h2>
+            <div className="flex flex-col justify-center flex-grow space-y-7">
+              <div className="p-2 overflow-hidden bg-white shadow-md rounded-xl">
+                <img 
+                  src="/assets/Barkat Enterprise Business Card PNG/1.png" 
+                  alt="About Barkat Enterprise" 
+                  className="object-cover w-full h-48 transition-transform duration-300 rounded-md hover:scale-105"
+                />
+              </div>
+              <p className="text-sm sm:text-base text-[#1A2930]">
+                Barkat Enterprise is your premier destination for high-quality tiles and marbles. 
+                We take pride in offering exceptional products that combine elegance with durability.
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/2 md:pl-12">
-            <h2 className="mb-6 font-serif text-3xl font-bold text-primaryLight">About Barkat Enterprise</h2>
-            <p className="mb-4 text-primary">
-              Barkat Enterprise specializes in tiles and marbles, providing high-quality products to meet the needs of our customers. With a commitment to excellence, we ensure that our offerings are both stylish and durable.
-            </p>
-            <p className="mb-6 text-primary">
-              Located at Kalindri Bus Stand, Dharampur, Malda, we are dedicated to customer satisfaction and strive to be a trusted name in the industry.
-            </p>
-            <button className="px-6 py-2 text-lg font-semibold transition duration-300 rounded-full bg-primary text-bg hover:bg-primaryLight">
-              Learn More
-            </button>
+
+          {/* Features and Details Section */}
+          <div className="flex flex-col px-6 py-6 bg-white sm:px-12 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
+            <h2 className="mb-6 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Why Choose Us</h2>
+            <div className="flex flex-col justify-center flex-grow space-y-3">
+              <FeatureCard
+                icon={<IoBusinessOutline />}
+                title="Premium Quality"
+                description="We source the finest tiles and marbles to ensure lasting beauty & durability"
+              />
+              <FeatureCard
+                icon={<IoTimeOutline />}
+                title="Experience"
+                description="Years of expertise in providing top-notch building materials"
+              />
+              <FeatureCard
+                icon={<IoRibbonOutline />}
+                title="Customer Satisfaction"
+                description="Dedicated to exceeding customer expectations with superior service"
+              />
+              
+              <Link 
+                to="/contact"
+                className="inline-flex items-center justify-center px-6 py-2 mx-16 mt-4 font-semibold transition-all duration-300 border-2 rounded-full text-[#0A1612] bg-[#F7CE3E] hover:bg-[#1A2930] hover:text-white border-[#F7CE3E] hover:border-[#1A2930]"
+              >
+                Contact Us
+                <BsArrowRight className="ml-2" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
+
+const FeatureCard = ({ icon, title, description }) => (
+  <div className="flex items-start p-3 space-x-3 transition-all duration-300 bg-[#F7CE3E] shadow-md sm:p-4 sm:space-x-4 rounded-xl hover:shadow-lg hover:transform hover:scale-105">
+    <div className="p-2 m-1 text-2xl rounded-full sm:p-3 text-[#0A1612] bg-white">
+      {icon}
+    </div>
+    <div>
+      <h4 className="text-base font-semibold sm:text-lg text-[#0A1612]">{title}</h4>
+      <p className="text-xs text-[#1A2930] sm:text-sm">{description}</p>
+    </div>
+  </div>
+);
 
 export default About;

@@ -24,13 +24,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-[92vh] py-6 px-4 sm:px-8 font-sans bg-white">
+    <div className="flex items-center justify-center min-h-[92vh] py-6 px-4 sm:px-8 font-sans bg-white">
       <div className="w-full rounded-3xl max-w-[58rem] shadow-xl">
         <div className="w-full h-full transition-all ease-in-out duration-600">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0">
             {/* Contact Info */}
-            <div className="flex flex-col px-6 py-6 sm:px-12 bg-bgVariant text-primary rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
-              <h2 className="mb-3 font-serif text-2xl font-bold text-center text-primary sm:text-3xl">Get in Touch</h2>
+            <div className="flex flex-col px-6 py-6 sm:px-12 bg-[#F7CE3E] text-[#0A1612] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
+              <h2 className="mb-3 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Get in Touch</h2>
               <div className="flex flex-col justify-center flex-grow space-y-3">
                 <ContactCard
                   icon={<HiOutlineMail className="text-3xl sm:text-4xl" />}
@@ -57,27 +57,36 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <form ref={form} onSubmit={sendEmail} className="relative flex flex-col px-6 py-6 sm:px-12 bg-primaryVariant/80 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
+            <form ref={form} onSubmit={sendEmail} className="relative flex flex-col px-6 py-6 bg-white sm:px-12 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
               {isMessageSent && (
-                <p className="absolute top-[-30px] left-0 right-0 mx-auto mb-4 text-center text-sm font-semibold text-primary bg-bgVariant p-2 rounded-lg shadow-md w-72 animate-fadeIn">
+                <p className="absolute top-[-30px] left-0 right-0 mx-auto mb-4 text-center text-sm font-semibold text-[#0A1612] bg-[#F7CE3E] p-2 rounded-lg shadow-md w-72 animate-fadeIn">
                   Message sent successfully!
                 </p>
               )}
 
-              <h2 className="mb-6 font-serif text-2xl font-bold text-center text-white sm:text-3xl">Send us a message</h2>
+              <h2 className="mb-6 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Send us a message</h2>
               <div className="flex flex-col justify-center flex-grow">
-                <Input name="name" placeholder="Your Full Name" />
-                <Input name="email" type="email" placeholder="Your Email" />
+                <Input 
+                  name="name" 
+                  placeholder="Your Full Name" 
+                  className="bg-gray-100"
+                />
+                <Input 
+                  name="email" 
+                  type="email" 
+                  placeholder="Your Email" 
+                  className="bg-gray-100"
+                />
                 <textarea
                   name="message"
                   rows="4"
                   placeholder="Your Message"
                   required
-                  className="w-full px-4 py-4 mb-4 overflow-y-auto text-sm transition-all duration-300 bg-white border-2 border-transparent rounded-lg outline-none resize-none scrollbar-thin scrollbar-thumb-bgVariant scrollbar-track-bg text-primary focus:ring-2 focus:ring-bgVariant focus:border-primary"
+                  className="w-full px-4 py-4 mb-4 overflow-y-auto text-sm transition-all duration-300 bg-gray-100 border-2 border-transparent rounded-lg outline-none resize-none scrollbar-thin scrollbar-thumb-bgVariant scrollbar-track-bg text-[#1A2930] focus:ring-2 focus:ring-[#F7CE3E] focus:border-[#0A1612]"
                 ></textarea>
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center px-6 py-2 mx-16 font-semibold transition-all duration-300 border-2 rounded-full text-primary bg-bgVariant hover:bg-white hover:text-primary border-bgVariant hover:border-primary"
+                  className="inline-flex items-center justify-center px-6 py-2 mx-16 font-semibold transition-all duration-300 border-2 rounded-full text-[#0A1612] bg-[#F7CE3E] hover:bg-[#1A2930] hover:text-white border-[#F7CE3E] hover:border-[#1A2930]"
                 >
                   <BsSend className="mr-2 text-base" />
                   Send Message
@@ -104,13 +113,13 @@ const ContactCard = ({ icon, title, content, link, linkText }) => (
   </div>
 );
 
-const Input = ({ name, type = "text", placeholder }) => (
+const Input = ({ name, type = "text", placeholder, className }) => (
   <input
     type={type}
     name={name}
     placeholder={placeholder}
     required
-    className="w-full px-4 py-2 mb-4 text-sm transition-all duration-300 bg-white border-2 border-transparent rounded-lg outline-none text-primary focus:ring-2 focus:ring-bgVariant focus:border-primary"
+    className={`w-full px-4 py-2 mb-4 text-sm transition-all duration-300 bg-gray-100 border-2 border-transparent rounded-lg outline-none text-primary focus:ring-2 focus:ring-[#F7CE3E] focus:border-[#0A1612] ${className}`}
   />
 );
 
