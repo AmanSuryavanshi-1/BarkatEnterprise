@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowRight, FaRocket } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const images = [
   '/assets/Products/Carousel WEBP/1.webp',
@@ -55,20 +56,22 @@ const Hero = () => {
           }`}
         >
           <h1 className="mt-12 font-serif text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_4px_rgb(0_0_0_/_40%)]">
-            Barkat Enterprises
+            BARKAT ENTERPRISES
           </h1>
           <p className="mt-4 mb-8 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl text-bgVariant drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] [text-shadow:_1px_1px_2px_rgb(0_0_0_/_30%)]">
             Elevate Your Space with Premium Tiles
           </p>
-          <button className="relative mt-2 w-[17rem] px-8 py-2 overflow-hidden text-lg font-semibold  text-white transition-all duration-300 ease-in-out transform border-[3px] rounded-full shadow-lg bg-bgVariant/40 group hover:shadow-xl">
-            <span className="flex items-center justify-center w-full transition-all duration-300 transform group-hover:translate-x-full ease">
-              <FaRocket className="mr-2 text-2xl" />
-              Explore Collection
-            </span>
-            <span className="absolute inset-0 flex items-center justify-center w-full h-full duration-300 -translate-x-full bg-bgVariant group-hover:translate-x-0 ease">
-              <FaArrowRight className="text-3xl text-white" />
-            </span>
-          </button>
+          <Link to="products">
+            <button className="relative mt-2 w-[17rem] px-8 py-2 overflow-hidden text-lg font-semibold  text-white transition-all duration-300 ease-in-out transform border-[3px] rounded-full shadow-lg bg-bgVariant/70 group hover:shadow-xl">
+              <span className="flex items-center justify-center w-full transition-all duration-300 transform group-hover:translate-x-full ease">
+                <FaRocket className="mr-2 text-2xl" />
+                Explore Collection
+              </span>
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full duration-300 -translate-x-full bg-bgVariant group-hover:translate-x-0 ease">
+                <FaArrowRight className="text-3xl text-white" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
 

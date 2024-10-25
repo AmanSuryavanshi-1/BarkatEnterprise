@@ -24,7 +24,7 @@ const Layout = () => (
 );
 
 const HomePage = () => (
-  <div className='mt-[8vh]'>
+  <div className='my-12'>
     <Hero />
     <ProductCategories />
     <About />

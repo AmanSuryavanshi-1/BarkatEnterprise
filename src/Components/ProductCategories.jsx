@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaLemon, FaTag } from 'react-icons/fa'
 import { categories, sampleTiles } from '../Utils/ProductData'
+import { Link } from 'react-router-dom'
 
 const Button = ({ children, className, ...props }) => (
   <button
@@ -42,6 +43,7 @@ export default function ProductCategories() {
                       </span>
                     </div>
                   </div>
+                  <Link to='/products' onClick={() => window.scrollTo(0, 0)}>
                     <button className="relative w-full p-2 mt-2 overflow-hidden text-white transition-all duration-300 rounded-b-md group bg-primary hover:bg-primaryVariant">
                         <span className="relative z-10 flex items-center justify-center">
                           <FaLemon className="mr-2 transition-transform duration-300 group-hover:rotate-12" />
@@ -50,6 +52,7 @@ export default function ProductCategories() {
                         <span className="absolute inset-0 z-0 transition-opacity duration-300 opacity-0 bg-bgVariant group-hover:opacity-20"></span>
                         <span className="absolute bottom-0 left-0 w-0 h-1 transition-all duration-300 bg-bgVariant group-hover:w-full"></span>
                     </button>
+                  </Link>
                 </div>
               )
             })
