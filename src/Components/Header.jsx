@@ -53,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center h-full py-2">
             <img 
-              src="/public/assets/Logo/13-Photoroom.png" 
+              src="/assets/Logo/13-Photoroom.png" 
               alt="Logo" 
               className="object-contain w-auto h-[8vh]"
             />
