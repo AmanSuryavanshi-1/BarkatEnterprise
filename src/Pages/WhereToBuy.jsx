@@ -1,33 +1,36 @@
 import React from 'react';
+import { BsClockFill } from 'react-icons/bs';
 import { 
   IoTimeOutline, 
   IoLocationOutline
 } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const WhereToBuy = () => {
   const businessHours = [
-    { day: 'Monday - Friday', hours: '9:00 AM - 7:00 PM' },
-    { day: 'Saturday', hours: '9:00 AM - 5:00 PM' },
-    { day: 'Sunday', hours: 'Closed' }
+    { day: 'Monday - Thursday', hours: '7:00 AM - 7:00 PM' },
+    { day: 'Friday (Morning)', hours: '7:00 AM - 12:00 PM' },
+    { day: 'Friday (Evening)', hours: '4:00 PM - 7:00 PM' },
+    { day: 'Saturday - Sunday', hours: '7:00 AM - 7:00 PM' }
   ];
 
   return (
-    <div className="h-[92vh] w-full font-sans flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-5xl">
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-[80vh]">
-          <div className="grid h-full grid-cols-1 lg:grid-cols-5">
+    <div className="h-[92vh] max-md:h-full w-full font-sans flex items-center justify-center px-2 sm:px-6 lg:px-8">
+      <div className="w-full max-w-6xl">
+        <div className="overflow-hidden bg-white shadow-sm h-[88vh] max-md:h-full  rounded-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-5">
             {/* Left Section - Map (3 columns) */}
-            <div className="p-4 lg:col-span-3 lg:p-6">
-              <div className="bg-[#F7CE3E] rounded-xl p-4 h-full">
-                <h2 className="font-serif text-xl lg:text-2xl font-bold text-[#0A1612] text-center mb-4">
+            <div className="p-2 lg:col-span-3">
+              <div className="bg-[#F7CE3E] rounded-xl p-2 mt-3 shadow-lg h-max">
+                <h2 className="font-serif text-xl lg:text-2xl font-bold text-[#0A1612] text-center my-3">
                   Visit Our Store
                 </h2>
                 
                 {/* Location Details */}
-                <div className="flex items-start gap-2 mb-3 text-[#1A2930]">
+                <div className="flex items-start ml-2 gap-2 mb-3 text-[#1A2930]">
                   <IoLocationOutline className="flex-shrink-0 w-5 h-5 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-base mb-0.5">Barkat Enterprise</h3>
+                    <h3 className="text-base font-semibold ">Barkat Enterprise</h3>
                     <p className="text-xs">Your trusted partner in agricultural solutions</p>
                   </div>
                 </div>
@@ -47,9 +50,9 @@ const WhereToBuy = () => {
             </div>
 
             {/* Right Section - Business Hours & Contact (2 columns) */}
-            <div className="p-4 lg:col-span-2 lg:p-6">
+            <div className="p-4 lg:col-span-2 lg:p-5">
               {/* Business Hours Card */}
-              <div className="bg-[#F7CE3E] rounded-xl p-4 shadow-md mb-4">
+              <div className="bg-[#F7CE3E] rounded-xl p-5 shadow-md mb-7">
                 <div className="flex items-center gap-2 mb-3">
                   <IoTimeOutline className="w-5 h-5 text-[#1A2930]" />
                   <h3 className="font-semibold text-lg text-[#0A1612]">Business Hours</h3>
@@ -58,10 +61,11 @@ const WhereToBuy = () => {
                   {businessHours.map((schedule, index) => (
                     <div
                       key={index}
-                      className="flex justify-between items-center text-[#1A2930] bg-white rounded-lg p-2 shadow-sm"
+                      className="flex justify-between items-center text-[#1A2930] bg-white rounded-lg py-2 px-4 shadow-sm"
                     >
                       <span className="text-sm font-medium">{schedule.day}</span>
-                      <span className="text-xs bg-[#0A1612] text-white py-1 px-2 rounded-full">
+                      <span className="flex text-xs bg-[#0A1612] text-white py-1 px-3 w-[9.8rem] rounded-full">
+                        <span className='mr-2'><BsClockFill/> </span>
                         {schedule.hours}
                       </span>
                     </div>
@@ -70,21 +74,24 @@ const WhereToBuy = () => {
               </div>
 
               {/* Bulk Orders Section */}
-              <div className="bg-[#F7CE3E] rounded-xl p-4 shadow-md">
-                <h3 className="font-semibold text-lg mb-2 text-[#0A1612]">
+              <div className="bg-[#F7CE3E] rounded-xl p-6 shadow-md">
+                <h3 className="font-semibold text-lg mb-3 text-[#0A1612]">
                   Looking for Bulk Orders?
                 </h3>
                 <p className="text-[#1A2930] text-sm mb-4">
                   We offer special pricing for bulk orders and corporate clients. 
                   Contact us to discuss your requirements.
                 </p>
-                <button 
-                  className="w-full bg-white text-[#0A1612] px-4 py-2 rounded-full text-sm font-semibold 
-                           shadow-md transition-all duration-300 hover:bg-[#1A2930] hover:text-white
-                           focus:outline-none focus:ring-2 focus:ring-[#1A2930] focus:ring-offset-2"
-                >
-                  Contact Sales Team
-                </button>
+
+                <Link to="/contact">
+                    <button 
+                    className="w-full bg-white text-[#0A1612] px-4 py-2 rounded-full text-sm font-semibold 
+                            shadow-md transition-all duration-300 hover:bg-[#1A2930] hover:text-white
+                            focus:outline-none focus:ring-2 focus:ring-[#1A2930] focus:ring-offset-2"
+                    >
+                    Contact Sales Team
+                    </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -29,8 +29,8 @@ const Contact = () => {
         <div className="w-full h-full transition-all ease-in-out duration-600">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0">
             {/* Contact Info */}
-            <div className="flex flex-col px-6 py-6 sm:px-12 bg-[#F7CE3E] text-[#0A1612] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
-              <h2 className="mb-3 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Get in Touch</h2>
+            <div className="flex flex-col px-6 pt-9 pb-8 sm:px-12 bg-[#F7CE3E] text-[#0A1612] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
+              <h2 className="mb-4 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Get in Touch</h2>
               <div className="flex flex-col justify-center flex-grow space-y-3">
                 <ContactCard
                   icon={<HiOutlineMail className="text-3xl sm:text-4xl" />}
@@ -50,7 +50,7 @@ const Contact = () => {
                   icon={<IoLocationOutline className="text-3xl sm:text-4xl" />}
                   title="Location"
                   content="Kalindri Bus Stand, Dharampur Malda"
-                  link="https://maps.google.com/?q=Kalindri Bus Stand, Dharampur Malda"
+                  link="https://www.google.com/maps/place/Barkat+Enterprise/@25.0621466,87.9615841,20z/data=!4m6!3m5!1s0x39faf1e0d271f18b:0xd57d079b6d647370!8m2!3d25.0626696!4d87.9614057!16s%2Fg%2F11twrm5tr7?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
                   linkText="Get directions"
                 />
               </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 </p>
               )}
 
-              <h2 className="mb-6 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Send us a message</h2>
+              <h2 className="py-3 font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">Send us a message</h2>
               <div className="flex flex-col justify-center flex-grow">
                 <Input 
                   name="name" 
@@ -82,7 +82,7 @@ const Contact = () => {
                   rows="4"
                   placeholder="Your Message"
                   required
-                  className="w-full px-4 py-4 mb-4 overflow-y-auto text-sm transition-all duration-300 bg-gray-100 border-2 border-transparent rounded-lg outline-none resize-none scrollbar-thin scrollbar-thumb-bgVariant scrollbar-track-bg text-[#1A2930] focus:ring-2 focus:ring-[#F7CE3E] focus:border-[#0A1612]"
+                  className="w-full h-40 px-4 py-4 mb-8 overflow-y-auto text-sm transition-all duration-300 bg-gray-100 border-2 border-transparent rounded-lg outline-none resize-none scrollbar-thin scrollbar-thumb-bgVariant scrollbar-track-bg text-[#1A2930] focus:ring-2 focus:ring-[#F7CE3E] focus:border-[#0A1612]"
                 ></textarea>
                 <button
                   type="submit"
@@ -119,7 +119,7 @@ const Input = ({ name, type = "text", placeholder, className }) => (
     name={name}
     placeholder={placeholder}
     required
-    className={`w-full px-4 py-2 mb-4 text-sm transition-all duration-300 bg-gray-100 border-2 border-transparent rounded-lg outline-none text-primary focus:ring-2 focus:ring-[#F7CE3E] focus:border-[#0A1612] ${className}`}
+    className={`w-full px-4 py-2 mb-4 text-sm transition-all duration-300 bg-white border-2 border-transparent rounded-lg outline-none text-primary focus:ring-2 focus:ring-bgVariant focus:border-primary ${className}`}
   />
 );
 
