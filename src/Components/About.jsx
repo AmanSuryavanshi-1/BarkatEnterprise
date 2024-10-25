@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import { IoBusinessOutline, IoTimeOutline, IoRibbonOutline } from 'react-icons/io5';
+import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -12,12 +13,19 @@ const About = () => {
           <div className="flex flex-col px-6 py-6 sm:px-12 bg-[#F7CE3E] text-[#0A1612] rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
             <h2 className="font-serif text-2xl font-bold text-center text-[#0A1612] sm:text-3xl">About Us</h2>
             <div className="flex flex-col justify-center flex-grow space-y-7">
-              <div className="p-2 overflow-hidden bg-white shadow-md rounded-xl">
+              <div className="relative p-2 overflow-hidden bg-white shadow-md rounded-xl group">
                 <img 
                   src="/assets/Barkat Enterprise Business Card PNG/1.png" 
                   alt="About Barkat Enterprise" 
-                  className="object-cover w-full h-48 transition-transform duration-300 rounded-md hover:scale-105"
+                  className="object-cover w-full h-48 transition-transform duration-300 rounded-md group-hover:scale-105"
                 />
+                <a 
+                  href="/assets/Barkat Enterprise Business Card PNG/1.png" 
+                  download="Barkat_Enterprise_Business_Card.png"
+                  className="absolute inset-0 flex items-center justify-center text-lg text-white transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100"
+                >
+                   <FaDownload className='mr-3 text-3xl text-bgVariant'/> <p className='font-serif text-2xl font-semibold text-bgVariant'> Download </p>
+                </a>
               </div>
               <p className="text-sm sm:text-base text-[#1A2930]">
                 Barkat Enterprise is your premier destination for high-quality tiles and marbles. 

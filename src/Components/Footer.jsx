@@ -1,46 +1,104 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaFacebookF, FaInstagram, FaHome, FaInfoCircle, FaBox, FaBook, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
 
-const Footer = () => {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="py-12 bg-bgVariant text-primary">
-      <div className="container px-4 mx-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <footer className="py-16 text-bg bg-gradient-to-br from-[#1a2e35] to-[#0d1518]">
+      <div className="container px-4 mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {/* About Us Section */}
           <div>
-            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">About Barkat Enterprise</h3>
-            <p className="text-primary">Barkat Enterprise specializes in high-quality tiles and marbles, providing a wide range of options for all your flooring needs.</p>
+            <h3 className="mb-6 text-xl font-bold text-yellow-500">About Us</h3>
+            <p className="mb-8 text-sm leading-relaxed text-gray-300">
+              Barkat Enterprise specializes in high-quality tiles and marbles, providing a wide range of options for all your flooring needs. With years of experience and a commitment to excellence, we're your trusted partner in creating beautiful spaces.
+            </p>
+            <button 
+              className="px-6 py-2.5 text-sm font-medium transition-all duration-300 bg-yellow-500 rounded hover:bg-yellow-600 text-gray-900"
+            >
+              Download Business Card
+            </button>
           </div>
-          <div>
-            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-primary hover:text-primaryLight">Home</a></li>
-              <li><a href="#" className="text-primary hover:text-primaryLight">Products</a></li>
-              <li><a href="#" className="text-primary hover:text-primaryLight">Where to Buy</a></li>
-              <li><a href="#" className="text-primary hover:text-primaryLight">Contact Us</a></li>
-            </ul>
+
+          {/* Quick Links Section */}
+          <div className="lg:pl-8">
+            <h3 className="mb-6 text-xl font-bold text-yellow-500">Quick Links</h3>
+            <nav className="space-y-3">
+              {[
+                { to: "/", icon: <FaHome className="w-4 h-4" />, text: "Home" },
+                { to: "/products", icon: <FaBox className="w-4 h-4" />, text: "Products" },
+                { to: "/catalogues", icon: <FaBook className="w-4 h-4" />, text: "Catalogues" },
+                { to: "/where-to-buy", icon: <FaMapMarkerAlt className="w-4 h-4" />, text: "Where to Buy" },
+                { to: "/about", icon: <FaInfoCircle className="w-4 h-4" />, text: "About Us" },
+                { to: "/contact", icon: <FaPhoneAlt className="w-4 h-4" />, text: "Contact" }
+              ].map((link) => (
+                <Link 
+                  key={link.to}
+                  to={link.to} 
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="flex items-center transition-transform duration-300 group hover:translate-x-1"
+                >
+                  <span className="mr-3 text-yellow-500 group-hover:text-yellow-400">{link.icon}</span>
+                  <span className="text-gray-300 group-hover:text-yellow-400">{link.text}</span>
+                </Link>
+              ))}
+            </nav>
           </div>
-          <div>
-            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Contact Info</h3>
-            <p className="text-primary">Kalindri Bus Stand, Dharampur, Malda</p>
-            <p className="mt-2 text-primary">Phone: 9630678115, 9899826755</p>
-            <p className="text-primary">Email: sk80bali@gmail.com</p>
+
+          {/* Contact Info Section */}
+          <div className="lg:pl-8">
+            <h3 className="mb-6 text-xl font-bold text-yellow-500">Contact Info</h3>
+            <div className="space-y-4">
+              <p className="flex items-start group">
+                <FaMapMarkerAlt className="flex-shrink-0 w-4 h-4 mt-1 mr-3 text-yellow-500" />
+                <span className="text-sm text-gray-300">Kalindri Bus Stand, Dharampur, Malda</span>
+              </p>
+              <p className="flex items-center group">
+                <FaPhoneAlt className="flex-shrink-0 w-4 h-4 mr-3 text-yellow-500" />
+                <span className="text-sm text-gray-300">9630678115, 9899826755</span>
+              </p>
+              <p className="flex items-center group">
+                <FaEnvelope className="flex-shrink-0 w-4 h-4 mr-3 text-yellow-500" />
+                <span className="text-sm text-gray-300">sk80bali@gmail.com</span>
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 className="mb-4 font-serif text-xl font-semibold text-primaryLight">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-primary hover:text-primaryLight"><FaFacebookF /></a>
-              <a href="#" className="text-primary hover:text-primaryLight"><FaTwitter /></a>
-              <a href="#" className="text-primary hover:text-primaryLight"><FaInstagram /></a>
-              <a href="#" className="text-primary hover:text-primaryLight"><FaLinkedinIn /></a>
+
+          {/* Follow Us Section */}
+          <div className="lg:pl-8">
+            <h3 className="mb-6 text-xl font-bold text-yellow-500">Follow Us</h3>
+            <div className="flex gap-4">
+              {[
+                { icon: <FaFacebookF className="w-4 h-4" />, href: "#", label: "Facebook" },
+                { icon: <FaInstagram className="w-4 h-4" />, href: "#", label: "Instagram" },
+                { icon: <BsWhatsapp className="w-4 h-4" />, href: "https://api.whatsapp.com/send?phone=+919630678115&text=Hello%20there!", label: "WhatsApp" },
+                { icon: <FaMapMarkerAlt className="w-4 h-4" />, href: "https://www.google.com/maps/place/Barkat+Enterprise/@25.0621466,87.9615841,20z/", label: "Maps" }
+              ].map((social, index) => (
+                <a 
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="flex items-center justify-center w-10 h-10 text-yellow-500 transition-all duration-300 border rounded-full border-yellow-500/50 hover:bg-yellow-500 hover:border-yellow-500 hover:text-gray-900"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-        <div className="pt-8 mt-8 text-center border-t border-bgLight">
-          <p className="text-primary">&copy; {new Date().getFullYear()} Barkat Enterprise. All rights reserved.</p>
+
+        {/* Copyright Section */}
+        <div className="pt-12 mt-16 border-t border-gray-700">
+          <p className="text-sm text-center text-gray-400">
+            &copy; {currentYear} Barkat Enterprise. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
