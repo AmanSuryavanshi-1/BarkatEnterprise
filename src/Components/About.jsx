@@ -20,7 +20,7 @@ const About = () => {
                   className="object-cover w-full h-48 transition-transform duration-300 rounded-md group-hover:scale-105"
                 />
                 <a 
-                  href="/public/assets/Barkat Enterprise Business Card PNG/Barkat Enterprise Business Card.pdf" 
+                  href="/assets/Barkat Enterprise Business Card PNG/Barkat Enterprise Business Card.pdf" 
                   download="Barkat_Enterprise_Business_Card.pdf"
                   className="absolute inset-0 flex items-center justify-center text-lg text-white transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100"
                 >
