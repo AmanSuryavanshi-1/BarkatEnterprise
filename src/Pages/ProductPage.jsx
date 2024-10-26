@@ -111,8 +111,8 @@ export default function ProductPage() {
           <div className="p-4 md:p-8">
             <div className="mx-auto max-w-7xl">
               {/* Header */}
-              <div className="py-3 mb-8 shadow-lg bg-bg/20 rounded-xl">
-                <h1 className="font-serif text-2xl text-center md:text-4xl text-primary">
+              <div className="py-3 mb-8 shadow-xl rounded-xl">
+                <h1 className="font-serif text-2xl text-center md:text-4xl text-primaryVariant">
                   <span className="font-bold">{selectedCategory}</span>
                   {selectedSubcategory !== 'All Types' && (
                     <span className="font-medium text-primaryVariant"> - {selectedSubcategory}</span>

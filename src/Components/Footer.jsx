@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram, FaHome, FaInfoCircle, FaBox, FaBook, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaHome, FaInfoCircle, FaBox, FaBook, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaMailchimp } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 
 export default function Footer() {
@@ -72,10 +72,10 @@ export default function Footer() {
             <h3 className="mb-6 text-xl font-bold text-yellow-500">Follow Us</h3>
             <div className="flex gap-4">
               {[
-                { icon: <FaFacebookF className="w-4 h-4" />, href: "#", label: "Facebook" },
-                { icon: <FaInstagram className="w-4 h-4" />, href: "#", label: "Instagram" },
+                // { icon: < className="w-4 h-4" />, href: "#", label: "Facebook" },
                 { icon: <BsWhatsapp className="w-4 h-4" />, href: "https://api.whatsapp.com/send?phone=+919630678115&text=Hello%20there!", label: "WhatsApp" },
-                { icon: <FaMapMarkerAlt className="w-4 h-4" />, href: "https://www.google.com/maps/place/Barkat+Enterprise/@25.0621466,87.9615841,20z/", label: "Maps" }
+                { icon: <FaMapMarkerAlt className="w-4 h-4" />, href: "https://www.google.com/maps/place/Barkat+Enterprise/@25.0621466,87.9615841,20z/", label: "Maps" },
+                { icon: <FaInstagram className="w-4 h-4" />, href: "#", label: "Instagram" },
               ].map((social, index) => (
                 <a 
                   key={index}

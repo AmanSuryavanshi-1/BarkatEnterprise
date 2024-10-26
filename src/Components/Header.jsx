@@ -28,15 +28,7 @@ export default function Header() {
   const menuItems = [
     { name: 'Home', link: '/', icon: FaHome },
     { name: 'Products', link: '/products', icon: FaBox },
-    { 
-      name: 'Catalogues', 
-      icon: FaBook,
-      submenu: [
-        { name: 'E-Catalogue 2023', link: '/catalogues/2023' },
-        { name: 'E-Catalogue 2022', link: '/catalogues/2022' },
-        { name: 'E-Catalogue 2021', link: '/catalogues/2021' },
-      ]
-    },
+    { name: 'Catalogues',link: '/catalogues', icon: FaBook },
     { name: 'Where to Buy', link: '/where-to-buy', icon: FaMapMarkerAlt },
     { name: 'About Us', link: '/about', icon: FaInfoCircle },
     { name: 'Contact Us', link: '/contact', icon: FaPhoneAlt },

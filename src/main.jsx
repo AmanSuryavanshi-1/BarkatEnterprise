@@ -11,9 +11,8 @@ import Footer from './Components/Footer';
 import ProductPage from './Pages/ProductPage';
 import Contact from './Pages/Contact';
 import WhereToBuy from './Pages/WhereToBuy';
+import CataloguePage from './Pages/CataloguePage';
 
-// New components for product and catalogue pages
-const CataloguePage = ({ year }) => <div>E-Catalogue for {year}</div>;
 
 const Layout = () => (
   <div className="font-sans bg-white text-primary mt-[8vh]">
@@ -37,13 +36,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
-      // { path: "products/floor-tiles", element: <ProductPage category="Floor Tiles" /> },
-      // { path: "products/wall-tiles", element: <ProductPage category="Wall Tiles" /> },
-      // { path: "products/bathroom-tiles", element: <ProductPage category="Bathroom Tiles" /> },
       { path: "products", element: <ProductPage /> },
-      { path: "catalogues/2023", element: <CataloguePage year="2023" /> },
-      { path: "catalogues/2022", element: <CataloguePage year="2022" /> },
-      { path: "catalogues/2021", element: <CataloguePage year="2021" /> },
+      { path: "catalogues", element: <CataloguePage /> },
       { path: "where-to-buy", element: <WhereToBuy/> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact/>},
