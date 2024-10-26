@@ -14,18 +14,18 @@ const CataloguePage = () => {
   const catalogues = {
     catalogue1: {
       name: '1×1.5 BARKAT ENTERPRISE',
-      images: Array.from({ length: 29 }, (_, i) => `/public/assets/Catalogue/1X1.5 BARKAT ENTERPRISE/${i + 1}.webp`),
-      pdfPath: '/public/assets/Catalogue/1X1.5 BARKAT ENTERPRISE (ALL)_compressed.pdf'
+      images: Array.from({ length: 29 }, (_, i) => `/assets/Catalogue/1X1.5 BARKAT ENTERPRISE/${i + 1}.webp`),
+      pdfPath: '/assets/Catalogue/1X1.5 BARKAT ENTERPRISE (ALL)_compressed.pdf'
     },
     catalogue2: {
       name: '2×2 BARKAT ENTERPRISE',
-      images: Array.from({ length: 15 }, (_, i) => `/public/assets/Catalogue/2X2 BARKAT ENTERPRISE/${i + 1}.webp`),
-      pdfPath: '/public/assets/Catalogue/2X2 BARKAT ENTERPRISE.pdf'
+      images: Array.from({ length: 15 }, (_, i) => `/assets/Catalogue/2X2 BARKAT ENTERPRISE/${i + 1}.webp`),
+      pdfPath: '/assets/Catalogue/2X2 BARKAT ENTERPRISE.pdf'
     },
     catalogue3: {
       name: '2×4 BARKAT ENTERPRISE',
-      images: Array.from({ length: 36 }, (_, i) => `/public/assets/Catalogue/2X4 BARKAT ENTERPRISE/${i + 1}.webp`),
-      pdfPath: '/public/assets/Catalogue/2X4 BARKAT ENTERPRISE (GLOSSY).pdf'
+      images: Array.from({ length: 36 }, (_, i) => `/assets/Catalogue/2X4 BARKAT ENTERPRISE/${i + 1}.webp`),
+      pdfPath: '/assets/Catalogue/2X4 BARKAT ENTERPRISE (GLOSSY).pdf'
     }
   };
 

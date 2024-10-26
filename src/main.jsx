@@ -13,7 +13,6 @@ import Contact from './Pages/Contact';
 import WhereToBuy from './Pages/WhereToBuy';
 import CataloguePage from './Pages/CataloguePage';
 
-
 const Layout = () => (
   <div className="font-sans bg-white text-primary mt-[8vh]">
     <Header />

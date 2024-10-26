@@ -17,7 +17,7 @@ export default function Footer() {
               Barkat Enterprise specializes in high-quality tiles and marbles, providing a wide range of options for all your flooring needs. With years of experience and a commitment to excellence, we're your trusted partner in creating beautiful spaces.
             </p>
             <a
-            href="/public/assets/Barkat Enterprise Business Card PNG/Barkat Enterprise Business Card.pdf" 
+            href="/assets/Barkat Enterprise Business Card PNG/Barkat Enterprise Business Card.pdf" 
             download="Barkat_Enterprise_Business_Card.pdf"
               className="px-6 py-2.5 text-sm font-medium transition-all duration-300 bg-yellow-500 rounded hover:bg-yellow-600 text-gray-900"
             >
