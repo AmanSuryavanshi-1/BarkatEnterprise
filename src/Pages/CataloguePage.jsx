@@ -77,7 +77,7 @@ const CataloguePage = () => {
       <div className="sticky top-0 z-10 bg-white border-b border-bg/20">
         <div className="flex items-center justify-between px-4 py-3">
           {/* Catalogue Selector */}
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap space-x-2 md:space-x-4">
             {Object.entries(catalogues).map(([key, { name }]) => (
               <button
                 key={key}
@@ -85,7 +85,7 @@ const CataloguePage = () => {
                   setSelectedCatalogue(key);
                   setCurrentPage(1);
                 }}
-                className={`px-6 py-2 text-sm font-medium rounded-md transition-colors ${
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                   selectedCatalogue === key 
                     ? 'bg-bgVariant text-primary' 
                     : 'text-primaryVariant hover:bg-bgVariant/50'
@@ -107,10 +107,9 @@ const CataloguePage = () => {
         </div>
       </div>
 
-      {/* Rest of the component remains the same */}
       {/* Image Grid */}
-      <div className="p-6">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+      <div className="p-4 md:p-6">
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
           {currentImages.map((image, index) => (
             <div 
               key={index}
@@ -121,7 +120,7 @@ const CataloguePage = () => {
                   <img
                     src={image}
                     alt={`${catalogues[selectedCatalogue].name} - Image ${startIndex + index + 1}`}
-                    className="w-full transition-transform duration-300 max-h-[23rem] group-hover:scale-105"
+                    className="w-full transition-transform duration-300 max-h-[20rem] md:max-h-[23rem] group-hover:scale-105"
                     loading="lazy"
                   />
                 ) : (
@@ -153,7 +152,7 @@ const CataloguePage = () => {
           <button
             onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className={`flex items-center gap-2 px-6 py-2 rounded-md transition-colors ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-md transition-colors ${
               currentPage === 1 
                 ? 'bg-bg/20 text-primaryVariant cursor-not-allowed' 
                 : 'bg-bgVariant text-primary hover:bg-bgVariant/80'
@@ -182,7 +181,7 @@ const CataloguePage = () => {
           <button
             onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className={`flex items-center gap-2 px-6 py-2 rounded-md transition-colors ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-md transition-colors ${
               currentPage === totalPages 
                 ? 'bg-bg/20 text-primaryVariant cursor-not-allowed' 
                 : 'bg-bgVariant text-primary hover:bg-bgVariant/80'
@@ -201,7 +200,7 @@ const CataloguePage = () => {
           onClick={closeModal}
         >
           <div 
-            className="relative max-w-5xl p-4 mx-4 bg-white rounded-lg"
+            className="relative max-w-full p-4 mx-4 bg-white rounded-lg"
             onClick={e => e.stopPropagation()}
           >
             {/* Modal Controls - Top */}
@@ -212,7 +211,7 @@ const CataloguePage = () => {
               </span>
               
               {/* Top Right Controls */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
                 <button
                   onClick={shareImage}
                   className="p-2 text-white transition-colors rounded-full hover:bg-white/20"
