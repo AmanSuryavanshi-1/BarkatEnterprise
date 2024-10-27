@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_ugqrpcu', 'template_iz5pcva', form.current, 'I0BXSqsH7YBt5ciXX')
+      .sendForm('service_7i7vgcw', 'template_rdn70li', form.current, 'OV0mo2Kjv2OuOqEUd')
       .then(() => {
         setIsMessageSent(true);
         setTimeout(() => setIsMessageSent(false), 5000);
@@ -59,7 +59,7 @@ const Contact = () => {
             {/* Contact Form */}
             <form ref={form} onSubmit={sendEmail} className="relative flex flex-col px-6 py-6 bg-white sm:px-12 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none">
               {isMessageSent && (
-                <p className="absolute top-[-30px] left-0 right-0 mx-auto mb-4 text-center text-sm font-semibold text-[#0A1612] bg-[#F7CE3E] p-2 rounded-lg shadow-md w-72 animate-fadeIn">
+                <p className="absolute top-[-10px] left-0 right-0 mx-auto mb-4 text-center text-sm font-semibold text-[#0A1612] bg-[#F7CE3E] p-2 rounded-lg shadow-md w-72 animate-fadeIn">
                   Message sent successfully!
                 </p>
               )}
