@@ -48,6 +48,7 @@ export default function Header() {
             <img 
               src="/assets/Logo/13-Photoroom.png" 
               alt="Logo" 
+              onClick={() => window.scrollTo(0, 0)}
               className="object-contain w-auto h-[8vh]"
             />
             </Link>
@@ -71,6 +72,7 @@ export default function Header() {
                           <Link
                             key={subItem.name}
                             to={subItem.link}
+                            onClick={() => window.scrollTo(0, 0)}
                             className="block px-4 py-2 text-sm transition-colors duration-200 text-primary hover:bg-primaryVariant hover:text-white"
                           >
                             {subItem.name}
@@ -82,6 +84,7 @@ export default function Header() {
                 ) : (
                   <Link
                     to={item.link}
+                    onClick={() => window.scrollTo(0, 0)}
                     className="flex items-center h-full px-4 transition-all duration-200 text-primary hover:bg-primaryVariant hover:text-white"
                   >
                     <item.icon className="w-4 h-4 mr-2" />
@@ -130,6 +133,7 @@ export default function Header() {
                         <Link
                           key={subItem.name}
                           to={subItem.link}
+                          onClick={() => window.scrollTo(0, 0)}
                           className="block px-3 py-2 text-sm transition-colors duration-200 rounded-md text-primary hover:bg-primaryVariant hover:text-white"
                         >
                           {subItem.name}
@@ -140,6 +144,7 @@ export default function Header() {
                 ) : (
                   <Link
                     to={item.link}
+                    onClick={() => window.scrollTo(0, 0)}
                     className="flex items-center px-3 py-2 transition-colors duration-200 rounded-md text-primary hover:bg-primaryVariant hover:text-white"
                   >
                     <item.icon className="w-4 h-4 mr-2" />
