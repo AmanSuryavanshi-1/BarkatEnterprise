@@ -12,6 +12,50 @@ const Button = ({ children, className, ...props }) => (
   </button>
 )
 
+const descriptions = {
+  'Bathroom': [
+    'Elegant, Durable and Versatile designs',
+    'Polished and Water Resistant Surface'
+  ],
+  'Black and White': [
+    'Water and Fire resistant',
+    'Fully polished and high glossy'
+  ],
+  'Elevation - Outdoor wall': [
+    'Wide range of designs available',
+    'Sunlight proofing'
+  ],
+  'Flower Design - Series': [
+    'Different and new designs',
+    'Water and fire resistant'
+  ],
+  'Kitchen': [
+    'Variety of designs of kitchen',
+    'Oil and dust resistant'
+  ],
+  'Living Room - Hall': [
+    'Dust free, water proof and fire resistant',
+    'New designs available'
+  ],
+  'Pooja': [
+    'Dust free, water proof and fire resistant',
+    'New designs available'
+  ],
+  'Bathroom Tiles': [
+    'Water proof and non slippery',
+    'High durability'
+  ],
+  'Floor Tiles - Hall - Living Room': [
+    'Different designs available',
+    'High glossy, smooth and dust proof'
+  ],
+  'Floor': [
+    'Different designs available',
+    'High glossy, smooth and dust proof'
+  ],
+  // Add more mappings as needed
+};
+
 export default function ProductCategories() {
   return (
     <section className="py-16">
@@ -34,15 +78,14 @@ export default function ProductCategories() {
                   )}
                   <div className="flex-grow p-4">
                     <h3 className="mb-2 overflow-hidden font-semibold uppercase text-md text-primary line-clamp-1">{subcategory}</h3>
-                    <p className='line-clamp-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, commodi.</p>
-
-                    <div className="flex items-center gap-3 mt-3">
-                      <FaTag className="text-primaryVariant" />
-                      <span className="px-2 py-[0.2rem] text-sm font-medium rounded text-bgVariant bg-primaryVariant">
-                        {firstTile.category}
-                      </span>
-                    </div>
+                    <p className='text-md line-clamp-2'>{descriptions[subcategory]?.join(' | ')}</p> 
                   </div>
+                    <div className="flex items-center gap-2 ml-3">
+                        <FaTag className="text-primaryVariant" />
+                        <span className="px-2 py-[0.2rem] text-sm font-medium rounded text-bgVariant bg-primaryVariant">
+                          {firstTile.category}
+                        </span>
+                      </div>
                   <Link to='/products' onClick={() => window.scrollTo(0, 0)}>
                     <button className="relative w-full p-2 mt-2 overflow-hidden text-white transition-all duration-300 rounded-b-md group bg-primary hover:bg-primaryVariant">
                         <span className="relative z-10 flex items-center justify-center">
