@@ -6,7 +6,7 @@ import {
   FaChevronDown,
   FaHome,
   FaBox,
-  FaBook,
+  // FaBook,
   FaMapMarkerAlt,
   FaInfoCircle,
   FaPhoneAlt,
@@ -28,7 +28,7 @@ export default function Header() {
   const menuItems = [
     { name: 'Home', link: '/', icon: FaHome },
     { name: 'Products', link: '/products', icon: FaBox },
-    { name: 'Catalogues',link: '/catalogues', icon: FaBook },
+    // { name: 'Catalogues',link: '/catalogues', icon: FaBook },
     { name: 'Where to Buy', link: '/where-to-buy', icon: FaMapMarkerAlt },
     { name: 'About Us', link: '/about', icon: FaInfoCircle },
     { name: 'Contact Us', link: '/contact', icon: FaPhoneAlt },

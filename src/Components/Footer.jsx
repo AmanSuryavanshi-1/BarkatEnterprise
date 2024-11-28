@@ -32,7 +32,7 @@ export default function Footer() {
               {[
                 { to: "/", icon: <FaHome className="w-4 h-4" />, text: "Home" },
                 { to: "/products", icon: <FaBox className="w-4 h-4" />, text: "Products" },
-                { to: "/catalogues", icon: <FaBook className="w-4 h-4" />, text: "Catalogues" },
+                // { to: "/catalogues", icon: <FaBook className="w-4 h-4" />, text: "Catalogues" },
                 { to: "/where-to-buy", icon: <FaMapMarkerAlt className="w-4 h-4" />, text: "Where to Buy" },
                 { to: "/about", icon: <FaInfoCircle className="w-4 h-4" />, text: "About Us" },
                 { to: "/contact", icon: <FaPhoneAlt className="w-4 h-4" />, text: "Contact" }
