@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 const images = [
   '/assets/Products/Carousel WEBP/1.webp',
-  '/assets/Products/Carousel WEBP/2.webp',
-  '/assets/Products/Carousel WEBP/3.webp',
   '/assets/Products/Carousel WEBP/4.webp',
   '/assets/Products/Carousel WEBP/9.webp',
   '/assets/Products/Carousel WEBP/10.webp',
@@ -17,7 +15,6 @@ const images = [
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [textVisible, setTextVisible] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -25,12 +22,6 @@ const Hero = () => {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    setTextVisible(false);
-    const timer = setTimeout(() => setTextVisible(true), 100);
-    return () => clearTimeout(timer);
-  }, [currentSlide]);
 
   return (
     <section className="relative h-[92vh] overflow-hidden bg-bg">
@@ -50,19 +41,15 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div
-          className={`text-center z-10 transition-all duration-500 px-4 ${
-            textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <h1 className="mt-12 font-serif text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_4px_rgb(0_0_0_/_40%)]">
+        <div className="text-center z-10 px-4">
+          <h1 className="mt-12 font-serif text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl tracking-wide leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_4px_rgb(0_0_0_/_40%)] transform-gpu will-change-transform translate-z-0">
             BARKAT ENTERPRISES
           </h1>
-          <p className="mt-4 mb-8 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl text-bgVariant drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] [text-shadow:_1px_1px_2px_rgb(0_0_0_/_30%)]">
+          <p className="mt-4 mb-8 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl text-bgVariant leading-relaxed drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] [text-shadow:_1px_1px_2px_rgb(0_0_0_/_30%)] transform-gpu will-change-transform">
             Elevate Your Space with Premium Tiles
           </p>
           <Link to="products">
-            <button className="relative mt-2 w-[17rem] px-8 py-2 overflow-hidden text-lg font-semibold  text-white transition-all duration-300 ease-in-out transform border-[3px] rounded-full shadow-lg bg-bgVariant/70 group hover:shadow-xl">
+            <button className="relative mt-2 w-[17rem] px-8 py-2 overflow-hidden text-lg font-semibold text-white transition-all duration-300 ease-in-out transform border-[3px] rounded-full shadow-lg bg-bgVariant/70 group hover:shadow-xl">
               <span className="flex items-center justify-center w-full transition-all duration-300 transform group-hover:translate-x-full ease">
                 <FaRocket className="mr-2 text-2xl" />
                 Explore Collection
