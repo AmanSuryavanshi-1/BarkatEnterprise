@@ -38,21 +38,6 @@ gallery:
 
 # Barkat Enterprise: A Freelance Project for an Enterprise
 
-<div align="center">
-
-![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.10-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.4.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-### Premium Tiles & Marbles E-Commerce Platform
-
-*A sophisticated e-commerce solution built for a premium tiles and marbles business*
-
-</div>
-
----
-
 ## 📊 Key Metrics at a Glance
 
 <div align="center">
@@ -82,47 +67,8 @@ In this documentation, we'll provide a deep dive into the technologies used, the
 
 ---
 
-## 🎬 Video Walkthrough
-
-Watch the complete project demonstration to see all features in action:
-
-<!-- VIDEO_EMBED: YouTube -->
-<!-- videoYouTubeId: jBLsJyNLVcA -->
-
-<div align="center">
-
-[![Barkat Enterprise Demo Video](https://img.youtube.com/vi/jBLsJyNLVcA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jBLsJyNLVcA)
-
-*Click the thumbnail to watch on YouTube, or view the embedded player below*
-
-</div>
-
-### Embedded Video Player
-
-<div align="center">
-
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/jBLsJyNLVcA" 
-  title="Barkat Enterprise - Project Walkthrough" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-</iframe>
-
-</div>
-
-> **📌 Video Details**
-> - **Video ID:** `jBLsJyNLVcA`
-> - **Direct Link:** [https://youtu.be/jBLsJyNLVcA](https://youtu.be/jBLsJyNLVcA)
-> - **Embed URL:** `https://www.youtube.com/embed/jBLsJyNLVcA`
-
----
-
 ## 📋 Table of Contents
 
-- [Video Walkthrough](#video-walkthrough)
 - [The Challenge](#the-challenge)
 - [The Solution](#the-solution)
 - [Business Impact](#business-impact)
