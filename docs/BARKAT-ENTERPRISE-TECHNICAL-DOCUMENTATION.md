@@ -1,41 +1,40 @@
----
-title: "Barkat Enterprise: A Freelance Project for an Enterprise"
-tagLine: "Premium Tiles & Marbles E-Commerce Platform"
-category: "featured"
-type: "freelance"
-videoYouTubeId: "jBLsJyNLVcA"
-videoUrl: "https://youtu.be/jBLsJyNLVcA"
-videoEmbed: "https://www.youtube.com/embed/jBLsJyNLVcA"
-liveUrl: "https://barkat-enterprise.vercel.app/"
-codeUrl: "https://github.com/AmanSuryavanshi-1/BarkatEnterprise"
-blogUrl: "https://www.amansuryavanshi.me/blogs/a-freelance-project-for-an-enterprise"
-imageUrl: "https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise.webp"
+<!--
+@metadata
+title: Barkat Enterprise: A Freelance Project for an Enterprise
+tagLine: Premium Tiles & Marbles E-Commerce Platform
+category: featured
+type: freelance
+videoYouTubeId: jBLsJyNLVcA
+videoUrl: https://youtu.be/jBLsJyNLVcA
+videoEmbed: https://www.youtube.com/embed/jBLsJyNLVcA
+liveUrl: https://barkat-enterprise.vercel.app/
+codeUrl: https://github.com/AmanSuryavanshi-1/BarkatEnterprise
+blogUrl: https://www.amansuryavanshi.me/blogs/a-freelance-project-for-an-enterprise
+imageUrl: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise.webp
 metrics:
-  viewers: "3,000+"
-  leads: "50+"
-  loadTime: "< 2s"
-  imageOptimization: "30-50%"
-techStack:
-  - React 18
-  - Vite
-  - Tailwind CSS
-  - JavaScript ES6+
-  - React Router
-  - PDFJS
-  - EmailJS
-  - React LazyLoad
-  - Vercel Analytics
-badges:
-  - React
-  - Vite
-  - Tailwind
-  - Freelance
-  - E-Commerce
-  - PDF
-  - B2B
-  - Production
-  - JAMstack
----
+  viewers: 3,000+
+  leads: 50+
+  loadTime: < 2s
+  imageOptimization: 30-50%
+techStack: [React 18, Vite, Tailwind CSS, JavaScript ES6+, React Router, PDFJS, EmailJS, React LazyLoad, Vercel Analytics]
+badges: [React, Vite, Tailwind, Freelance, E-Commerce, PDF, B2B, Production, JAMstack]
+gallery:
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise.webp
+    alt: Desktop Homepage
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise-mobile.webp
+    alt: Mobile View
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/barkat-enterprise-Header.webp
+    alt: Header Section
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/barkat-enterprise-AboutUs.webp
+    alt: About Us Section
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/barkat-enterprise-Catalogues.webp
+    alt: Catalogues Section
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/barkat-enterprise-Products.webp
+    alt: Products Section
+  - src: https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/barkat-enterprise-Contact%20Page.webp
+    alt: Contact Section
+@end-metadata
+-->
 
 # Barkat Enterprise: A Freelance Project for an Enterprise
 
@@ -539,9 +538,9 @@ useEffect(() => {
 
 <div align="center">
 
-| Mobile Responsive |
-|:-----------------:|
-| ![Mobile View](https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise-mobile.webp) |
+<img src="https://cdn.jsdelivr.net/gh/AmanSuryavanshi-1/portfolio-assets@main/BarkatEnterprise/Enterprise-mobile.webp" alt="Mobile Responsive View" width="200" />
+
+*Mobile Responsive Design*
 
 </div>
 
